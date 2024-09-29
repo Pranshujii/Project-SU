@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="form">
+        <h1 id="heading">Create New Account</h1>
+        <div class="userpass">
+            <div class="head1">
+                <h4>Username</h4>
+                <h4>Create Password</h4>
+            </div>
+        <div class="userandpass">
+            
+            <input type="text">
+            <input type="password">
+        </div>
+        </div>
+        <h4>Legal Full Name</h4>
+        <div class="fullname">
+             
+            
+                
+            
+                <select name="Legal Full Name" id="prifix">
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Ms">Ms</option>
+                </select>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+        
+    <h4>Date of Birth</h4>
+        <div class="dob">
+            
+            <select name="month" id="month">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+            <input type="number" name="day" id="day" placeholder="Day" min="1" max="31">
+            <input type="number" name="year" id="year" placeholder="Year" min="1900" max="2023">
+        </div>
+        <div class="emailandphone">
+            <div class="email">
+                <h4>Email</h4>
+            <input id="email" type="text" placeholder="Email">
+            </div>
+            <div class="Phoneno">
+                <h4>Phone Number</h4>
+            <select name="countryCode" id="countryCode">
+                <option value="+1">+1 (USA)</option>
+                <option value="+44">+44 (UK)</option>
+                <option value="+91">+91 (India)</option>
+                <option value="+86">+86 (China)</option>
+                <option value="+33">+33 (France)</option>
+                <option value="+49">+49 (Germany)</option>
+                <option value="+81">+81 (Japan)</option>
+                <option value="+82">+82 (South Korea)</option>
+                <option value="+55">+55 (Brazil)</option>
+                <option value="+54">+54 (Argentina)</option>
+                <option value="+52">+52 (Mexico)</option>
+                <option value="+27">+27 (South Africa)</option>
+                <option value="+7">+7 (Russia)</option>
+                <option value="+39">+39 (Italy)</option>
+                <option value="+34">+34 (Spain)</option>
+                <option value="+31">+31 (Netherlands)</option>
+                <option value="+32">+32 (Belgium)</option>
+                <option value="+41">+41 (Switzerland)</option>
+                <option value="+43">+43 (Austria)</option>
+                <option value="+45">+45 (Denmark)</option>
+                <option value="+46">+46 (Sweden)</option>
+                <option value="+47">+47 (Norway)</option>
+                <option value="+48">+48 (Poland)</option>
+                <option value="+51">+51 (Peru)</option>
+                <option value="+56">+56 (Chile)</option>
+                <option value="+57">+57 (Colombia)</option>
+                <option value="+58">+58 (Venezuela)</option>
+                <option value="+60">+60 (Malaysia)</option>
+                <option value="+61">+61 (Australia)</option>
+                <option value="+62">+62 (Indonesia)</option>
+                <option value="+63">+63 (Philippines)</option>
+                <option value="+64">+64 (New Zealand)</option>
+                <option value="+65">+65 (Singapore)</option>
+                <option value="+66">+66 (Thailand)</option>
+                <option value="+84">+84 (Vietnam)</option>
+                <option value="+90">+90
+            <input type="tel" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" id="tel">
+        </div>
+
+        </div>
+        <div class="panandadhar">
+            <div class="pan">
+                <h4>Pan Number</h4>
+                <input type="text">
+            </div>
+            <div class="adhar">
+                <h4>Adhar Number</h4>
+                <input type="text">
+            </div>
+        </div>
+        <div class="Address">
+                <div class="PermanentAddress">
+                    <h4>Permanent Address*</h4>
+                    <input type="text">
+                </div>
+                <div class="CorrespondenceAddress">
+                    <h4>Correspondence Address*</h4>
+                    <input type="text">
+                </div>
+        </div>
+
+        <div class="upload">
+            <div class="UploadPan">
+                <h4>Upload Pan</h4>
+                <input type="file" id="pdfFile" accept=".pdf">
+            <button id="uploadButton">Upload</button>
+            <div id="fileInfo"></div>
+            </div>
+            <div class="UploadAdhar">
+                <h4>Upload Adhar</h4>
+                <input type="file" id="pdfFile" accept=".pdf">
+            <button id="uploadButton">Upload</button>
+            <div id="fileInfo"></div>
+            </div>
+        </div>
+
+        <div class="lastLine">
+            
+                <p id="lastline1">By signing up you accept the <a href="#" id="terms">Term of service</a> and <a href="#" id="privacy">Privacy Policy.</a></p>
+            <div class="button"><button id="signup">Sign Up</button>
+            </div>
+                
+            
+            
+                <p id="lastline2">Already have an account? <a href="login.html" id="signin">Sign in </a></p>
+            
+            
+            
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
